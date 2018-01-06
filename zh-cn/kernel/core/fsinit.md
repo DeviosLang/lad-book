@@ -1,8 +1,10 @@
 # 文件系统的初始化
 ## 概述
+
 本文主要介绍，linux kernel 0.11系统中minix1.0版本文件系统的初始化。主要参考的代码是， [mkfs.minix代码](https://www.kernel.org/pub/linux/utils/util-linux/v2.30/util-linux-2.30.1.tar.gz) 。首先会先描述一下出完成后初始化的数据结构是什么样子的，然后通过实验来看一个新初始化系统的数据组成情况。
 
 ## mini1.0文件系统的布局：
+
 | 引导块 | 超级快 | inode位图 | 逻辑块位图 | inode块 | 数据块 |
 | ---|---|---|---|---|---|---
 
